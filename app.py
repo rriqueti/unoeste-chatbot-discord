@@ -14,8 +14,7 @@ MATRICULA = os.getenv('MATRICULA')
 SENHA_UNOESTE = os.getenv('SENHA_UNOESTE')
 
 
-# Três linhas abaixo são usadas para instanciar nosso client
-# que será a conexão ao Discord
+# conexão ao Discord
 intents = discord.Intents.default()  # Usado p derrubar recursos de gateway
 intents.message_content = True  # Atributo para pertmitir Send msg
 client = discord.Client(intents=intents)
